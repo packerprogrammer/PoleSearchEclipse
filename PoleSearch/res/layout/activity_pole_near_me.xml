@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android1="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+    <TextView
+        android1:id="@+id/TextView01"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginLeft="26dp"
+        android1:layout_marginTop="24dp"
+        android1:text="Latitude: "
+        android1:textSize="20dip" />
+
+    <TextView
+        android1:id="@+id/TextView03"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/TextView01"
+        android1:layout_below="@+id/TextView01"
+        android1:layout_marginTop="20dp"
+        android1:text="Longitude: "
+        android1:textSize="20dip" />
+
+    <TextView
+        android1:id="@+id/TextView02"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/TextView01"
+        android1:layout_alignBottom="@+id/TextView01"
+        android1:layout_marginLeft="69dp"
+        android1:layout_toRightOf="@+id/TextView03"
+        android1:text="unkown"
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView04"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/TextView03"
+        android1:layout_alignBottom="@+id/TextView03"
+        android1:layout_alignLeft="@+id/TextView02"
+        android1:text="unknown"
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView05"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/TextView04"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="26dp"
+        android1:text=""
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView06"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/TextView05"
+        android1:layout_below="@+id/TextView05"
+        android1:layout_marginTop="15dp"
+        android1:text=""
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView07"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/TextView06"
+        android1:layout_below="@+id/TextView06"
+        android1:layout_marginTop="15dp"
+        android1:text=""
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView08"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/TextView07"
+        android1:layout_below="@+id/TextView07"
+        android1:layout_marginTop="15dp"
+        android1:text=""
+        android1:textSize="20sp" />
+
+    <TextView
+        android1:id="@+id/TextView09"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/TextView08"
+        android1:layout_below="@+id/TextView08"
+        android1:layout_marginTop="15dp"
+        android1:text=""
+        android1:textSize="20sp" />
+
+    <Button
+        android1:id="@+id/showmap"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/TextView09"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="36dp"
+        android:onClick="ShowMapClick"
+        android1:text="Show Map" />
+
+</RelativeLayout>
