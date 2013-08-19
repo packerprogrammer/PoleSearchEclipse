@@ -573,16 +573,16 @@ public class MainActivity extends FragmentActivity implements
     }//else if rowcount
 
     public boolean SendToGoogleMaps (double xpos, double ypos, String label){
-        String query = ypos + "," + xpos;// + "(" + label + ")";
-        String enquery = Uri.encode(query);
-        String geoloc = "geo:" + ypos +", "+ xpos + "?q=" + enquery;
-        Uri location = Uri.parse(geoloc); // z param is zoom level
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        
+        //String geoloc = "geo:0,0?q=" + ypos + "," + xpos;
+    	String geoloc = "http://maps.google.com/?q=" + ypos + "," + xpos;
+        Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(geoloc));
         // Verify it resolves
         PackageManager packageManager = getPackageManager();
         List<ResolveInfo> activities = packageManager.queryIntentActivities(mapIntent, 0);
         boolean isIntentSafe = activities.size() > 0;
-
+        
+        //mapIntent.setComponent(new ComponentName("com.google.android.apps.maps","com.google.android.maps.MapsActivity"));
         // Start an activity if it's safe
         if (isIntentSafe) {
             startActivity(mapIntent);
