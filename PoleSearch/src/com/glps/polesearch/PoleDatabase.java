@@ -100,7 +100,7 @@ public class PoleDatabase {
         if (cNearMe.moveToFirst()){
             do {
                 //TODO
-                unsortedPoles.put(PoleNearMe.GetDistance(cNearMe.getFloat(0),cNearMe.getFloat(1),lng, lat),cNearMe.getString(2));
+                unsortedPoles.put(GlpsMarker.GetDistance(cNearMe.getFloat(0),cNearMe.getFloat(1),lng, lat),cNearMe.getString(2));
             } while  (cNearMe.moveToNext());
             Map<Float,String> sortedPoles = new TreeMap<Float,String>(unsortedPoles);
 

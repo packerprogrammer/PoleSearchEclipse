@@ -42,4 +42,9 @@ public class GlpsMarker {
         this.lat = lat;
         this.lng = lng;
     }
+    public static Float GetDistance(float x, float y, float lng, float lat) {
+        float a = x - lng;
+        float b = y - lat;
+        return (float) Math.sqrt((a * a) + (b * b));
+    }
 }
