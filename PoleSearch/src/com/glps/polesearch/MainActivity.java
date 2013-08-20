@@ -574,8 +574,8 @@ public class MainActivity extends FragmentActivity implements
 
     public boolean SendToGoogleMaps (double xpos, double ypos, String label){
         
-        //String geoloc = "geo:0,0?q=" + ypos + "," + xpos;
-    	String geoloc = "http://maps.google.com/?q=" + ypos + "," + xpos;
+        String geoloc = "geo:0,0?q=" + ypos + "," + xpos +  "(" + label + ")";
+    	//String geoloc = "http://maps.google.com/?q=test";// " + ypos + "," + xpos;
         Intent mapIntent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(geoloc));
         // Verify it resolves
         PackageManager packageManager = getPackageManager();
