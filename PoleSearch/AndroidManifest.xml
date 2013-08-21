@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
+        android:minSdkVersion="7"
         android:targetSdkVersion="18" />
 	<permission
             android:name="com.glps.polesearch.permission.MAPS_RECEIVE"
@@ -32,14 +32,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity
-                android:name=".GLPSMapView"
-                android:theme="@android:style/Theme.NoTitleBar"
-                android:label="@string/title_activity_map_view" >
-        </activity>
-        <meta-data
-                android:name="com.google.android.maps.v2.API_KEY"
-                android:value="AIzaSyDpNQWu_Wtjt96vuaQAtuBCgyCLVT7Q06o"/>
+         
+       
     </application>
 
 
