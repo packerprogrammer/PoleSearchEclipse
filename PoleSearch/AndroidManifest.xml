@@ -33,6 +33,11 @@
             </intent-filter>
         </activity>
          <activity
+                android:name=".GLPSSearchView"
+                android:theme="@android:style/Theme.NoTitleBar"
+                android:label="@string/title_activity_map_view" >
+        </activity>
+        <activity
                 android:name=".GLPSMapView"
                 android:theme="@android:style/Theme.NoTitleBar"
                 android:label="@string/title_activity_map_view" >

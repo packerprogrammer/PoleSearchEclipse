@@ -46,4 +46,5 @@
             android:layout_height="wrap_content"
             android:text="@string/radio_PoleNumber" />
     </RadioGroup>
+
 </RelativeLayout>

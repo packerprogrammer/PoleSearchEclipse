@@ -561,10 +561,17 @@ public class MainActivity extends FragmentActivity implements
                 Toast.makeText(getApplicationContext(), PoleList[item], Toast.LENGTH_SHORT).show();
 
                 PoleValue.moveToPosition(item);
-                if (!SendToGoogleMaps(PoleValue.getDouble(0),PoleValue.getDouble(1),PoleList[item].toString())){
-                    Toast.makeText(getApplicationContext(), "Unable to Launch Map", Toast.LENGTH_LONG).show();
-                    return;
-                }
+                Intent intent = new Intent(getApplicationContext(), com.glps.polesearch.GLPSSearchView.class);
+               	Bundle extras = new Bundle();
+               	extras.putDouble("lat", PoleValue.getDouble(1));
+               	extras.putDouble("long", PoleValue.getDouble(0));
+               	extras.putString("poleString", PoleList[item].toString());
+                intent.putExtras(extras);
+                startActivity(intent);
+                //if (!SendToGoogleMaps(PoleValue.getDouble(0),PoleValue.getDouble(1),PoleList[item].toString())){
+                //    Toast.makeText(getApplicationContext(), "Unable to Launch Map", Toast.LENGTH_LONG).show();
+                //    return;
+                //}
 
             }// onClick
         });
