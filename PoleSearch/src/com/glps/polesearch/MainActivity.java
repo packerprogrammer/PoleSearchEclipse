@@ -734,6 +734,12 @@ public class MainActivity extends FragmentActivity implements
             stopPeriodicUpdates();
         }
     }
+    public void BtnStartClick (View view){
+
+        if (mLocationClient.isConnected()) {
+            startPeriodicUpdates();
+        }
+    }
 
 
     //Button Clicks

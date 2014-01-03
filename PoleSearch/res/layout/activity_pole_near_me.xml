@@ -14,7 +14,7 @@
         android1:layout_marginLeft="26dp"
         android1:layout_marginTop="24dp"
         android1:text="Latitude: "
-        android1:textSize="20dip" />
+        android1:textSize="20sp" />
 
     <TextView
         android1:id="@+id/TextView03"
@@ -24,7 +24,7 @@
         android1:layout_below="@+id/TextView01"
         android1:layout_marginTop="20dp"
         android1:text="Longitude: "
-        android1:textSize="20dip" />
+        android1:textSize="20sp" />
 
     <TextView
         android1:id="@+id/TextView02"

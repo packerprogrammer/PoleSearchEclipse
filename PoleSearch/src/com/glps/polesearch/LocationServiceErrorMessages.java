@@ -1,15 +1,9 @@
 package com.glps.polesearch;
 
-import android.app.Activity;
-import android.app.Dialog;
-import android.app.DialogFragment;
+import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.content.res.Resources;
-import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.util.Log;
 import com.google.android.gms.common.ConnectionResult;
 
 
@@ -18,9 +12,9 @@ import com.google.android.gms.common.ConnectionResult;
  */
 public class LocationServiceErrorMessages extends FragmentActivity {
     // Don't allow instantiation
-    private LocationServiceErrorMessages() {}
+	private LocationServiceErrorMessages() {}
 
-    public static String getErrorString(Context context, int errorCode) {
+	public static String getErrorString(Context context, int errorCode) {
 
         // Get a handle to resources, to allow the method to retrieve messages.
         Resources mResources = context.getResources();
